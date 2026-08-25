@@ -2,23 +2,7 @@
 
 **by KitoSoft**
 
-Ferramenta leve para mecânicos em servidores **GTA RP / FiveM**, criada para reduzir Alt+Tab e facilitar cálculos, controle de turno, histórico e análise de ganhos.
-
-## 🎥 Tutorial de uso
-
-Assista ao tutorial completo para aprender a configurar e utilizar o Mechanic Tool: configurações, atalhos, calculadora, controle de turno, histórico, análises, backup e suporte ao projeto.
-
-[![Assistir ao tutorial completo do Mechanic Tool](https://img.youtube.com/vi/KXMfE-bWXl4/hqdefault.jpg)](https://youtu.be/KXMfE-bWXl4)
-
-▶️ **[Assistir ao tutorial completo no YouTube](https://youtu.be/KXMfE-bWXl4)**
-
-## 🎮 Demonstração no GTA RP
-
-Veja o **overlay do Mechanic Tool funcionando durante o jogo**, com o valor do orçamento sendo atualizado sem precisar sair do GTA ou usar Alt+Tab.
-
-[![Mechanic Tool em uso no GTA RP](https://img.youtube.com/vi/ZOsCYhdAd74/hqdefault.jpg)](https://youtu.be/ZOsCYhdAd74)
-
-▶️ **[Assistir à demonstração no GTA RP](https://youtu.be/ZOsCYhdAd74)**
+Ferramenta leve para mecânicos em servidores **GTA RP / FiveM**, criada para reduzir Alt+Tab e facilitar cálculos, controle de turno, orçamentos Custom, histórico e análises.
 
 ## Download
 
@@ -26,68 +10,90 @@ Os arquivos oficiais são publicados somente em **Releases** deste repositório.
 
 ### Installer — recomendado
 
-[⬇️ **Baixar Mechanic Tool v1.0.2 — Installer**](https://github.com/democlit00-ops/MechanicTool-KitoSoft/releases/download/v1.0.2/MechanicTool-KitoSoft-Setup-v1.0.2.exe)
+[⬇️ **Baixar Mechanic Tool v2.0.0 — Installer**](https://github.com/democlit00-ops/MechanicTool-KitoSoft/releases/download/v2.0.0/MechanicTool-KitoSoft-Setup-v2.0.0.exe)
 
 Instala o Mechanic Tool no Windows, cria os atalhos escolhidos durante a instalação e inclui o desinstalador.
 
 ### Portable
 
-[⬇️ **Baixar Mechanic Tool v1.0.2 — Portable**](https://github.com/democlit00-ops/MechanicTool-KitoSoft/releases/download/v1.0.2/MechanicTool-KitoSoft-Portable-v1.0.2.zip)
+[⬇️ **Baixar Mechanic Tool v2.0.0 — Portable**](https://github.com/democlit00-ops/MechanicTool-KitoSoft/releases/download/v2.0.0/MechanicTool-KitoSoft-Portable-v2.0.0.zip)
 
 Extraia o ZIP para uma pasta e execute `Mechanic Tool.exe`. Não exige instalação.
 
-> As duas versões são para Windows x64 e incluem o runtime necessário. Não é preciso instalar o .NET separadamente.
+> Windows x64 • Runtime incluído • Não é necessário instalar o .NET separadamente.
 
-> Usuários da **v1.0.1** devem atualizar manualmente para a v1.0.2. A verificação de novas versões pelo próprio aplicativo passa a estar disponível a partir da **v1.0.2**.
+[📦 **Ver a Release v2.0.0 completa**](https://github.com/democlit00-ops/MechanicTool-KitoSoft/releases/tag/v2.0.0)
 
-[📦 **Ver a Release v1.0.2 completa**](https://github.com/democlit00-ops/MechanicTool-KitoSoft/releases/tag/v1.0.2)
+### Atenção para usuários da V1
 
-### Novidades da v1.0.2
+A V2 utiliza uma pasta de dados separada da V1. Os dados antigos não são apagados, mas histórico e configurações da V1 não são importados automaticamente. Crie um backup antes da atualização.
 
-- Corrigido o comportamento dos campos **Banco final do turno** e **Dinheiro final do turno** durante um turno aberto.
-- O **Lucro previsto** agora é recalculado imediatamente mesmo quando apenas um dos campos finais é informado e o outro permanece em zero.
-- Os valores finais em edição permanecem disponíveis enquanto o turno continua aberto.
-- Adicionada verificação de novas versões pelo GitHub sem bloquear o uso do aplicativo.
-- O usuário pode verificar atualizações manualmente pela tela **Sobre / Apoie**.
-- Quando houver uma nova versão, o Mechanic Tool pode baixar o Installer oficial, validar o arquivo por **SHA-256** e abrir a instalação após confirmação do usuário.
-- Adicionada tela de novidades/changelog exibida uma vez após a atualização.
-- Adicionado acesso ao histórico de versões pelo GitHub.
+## Novidades da v2.0.0
+
+- Novo módulo **Custom** para serviços de Estética e Tunagem.
+- Mão de obra configurável por multiplicação ou porcentagem.
+- Extras com valor de venda, custo fixo ou custo informado durante o serviço.
+- Cálculo correto de pintura com custo variável abatido antes da mão de obra.
+- Registro separado dos serviços Custom, evitando dupla contagem com o turno.
+- Histórico Custom com lucro real, print e situação do envio ao Discord.
+- Análises Custom de hoje, últimos 7 dias e últimos 30 dias.
+- Retenção configurável de históricos e prints por 30, 60, 90 dias ou nunca apagar.
+- Prints limitados a Full HD e aproximadamente 2 MB.
+- Novo guia rápido de atalhos em **Sobre / Apoie**.
+- Interface renovada, com melhorias para diferentes DPI, monitores e resolução 1366×768.
+- O antigo botão e atalho `+5` foram removidos da experiência do usuário.
 
 ## Recursos
 
 - Calculadora rápida com até **9 itens/serviços** configuráveis.
-- Atalhos globais editáveis para adicionar `+1` ou `+5` sem sair do jogo.
+- Atalhos globais editáveis para adicionar `+1` sem sair do jogo.
 - Suporte a combinações alternativas, inclusive teclas do NumPad.
 - Overlay sobre o jogo com total do orçamento e tempo trabalhado.
-- Posição do overlay ajustável por arrastar e soltar.
-- Opacidade do overlay configurável.
+- Posição e opacidade do overlay configuráveis.
 - Controle de turno por saldo inicial e saldo final.
-- Registro automático dos horários de início e término.
-- Lucro por sessão e média por hora.
-- Histórico de turnos com edição e exclusão.
-- Exportação CSV.
+- Lucro por sessão, média por hora e ranking estimado de horários.
+- Histórico de turnos com edição, exclusão e exportação CSV.
 - Análises de hoje, últimos 7 dias e últimos 30 dias.
-- Melhor data, melhor dia da semana e ranking estimado por faixa horária.
+- Orçamentos Custom de Estética e Tunagem.
+- Extras com custo fixo ou informado durante o atendimento.
+- Registro de serviços Custom com print opcional e integração por webhook do Discord.
 - Backup e restauração manual.
-- Verificação de atualizações pelo GitHub.
-- Changelog exibido após atualização.
+- Verificação de atualizações pelo GitHub com validação SHA-256.
 - Minimização para a bandeja do Windows.
 - Dados armazenados localmente no computador.
 
 ## Atalhos
 
-Os atalhos dos itens podem ser alterados em **Configurações**.
+Os atalhos `+1` dos itens da Calculadora podem ser alterados em **Configurações > Mecânica**.
 
-Atalhos reservados:
+Atalhos principais:
 
-- `Shift + 0` — zerar orçamento.
-- `Ctrl + Shift + O` — mostrar/ocultar overlay.
+- `Ctrl + Shift + M` — alternar entre Mecânica e Custom.
+- `Ctrl + Shift + O` — mostrar ou ocultar o overlay da Mecânica.
+- `Shift + 0` — zerar o orçamento da Mecânica.
+- `Shift + 1` — abrir o orçamento Custom quando esse modo estiver ativo.
+- `Shift + 2` — ocultar o Custom sem apagar o orçamento atual.
+
+## Cálculo Custom
+
+Os custos dos extras são abatidos da base antes da aplicação da mão de obra. Depois, o valor de venda dos extras é somado ao orçamento.
+
+Exemplo com pintura variável:
+
+```text
+Valor da máquina: R$ 3.600
+Custo da pintura: R$ 900
+Base ajustada: R$ 2.700
+Mão de obra 100%: R$ 2.700
+Valor de venda da pintura: R$ 15.000
+Total para o cliente: R$ 20.400
+```
+
+O custo interno não é exibido no orçamento enviado ao cliente pelo Discord.
 
 ## Controle de turno
 
-Ao iniciar o turno, informe quanto possui no banco e em dinheiro na mão.
-
-Ao finalizar, informe os valores finais.
+Ao iniciar o turno, informe quanto possui no banco e em dinheiro na mão. Ao finalizar, informe os valores finais.
 
 O lucro da sessão é calculado como:
 
@@ -95,31 +101,39 @@ O lucro da sessão é calculado como:
 saldo final - saldo inicial
 ```
 
-Qualquer dinheiro que entrar ou sair durante o período naturalmente fará parte do resultado da sessão.
+Os serviços Custom permanecem registrados separadamente e não substituem nem alteram o resultado do turno.
 
 ## Atualizações
 
-A partir da **v1.0.2**, o Mechanic Tool pode consultar a Release mais recente publicada neste repositório.
+O Mechanic Tool consulta as Releases oficiais deste repositório. Quando uma versão mais nova estiver disponível, o usuário decide se deseja atualizar.
 
-Quando uma versão mais nova estiver disponível, o usuário pode optar por atualizar. O Installer é baixado da Release oficial e verificado por SHA-256 antes de ser executado.
+O Installer baixado é validado por SHA-256 antes de ser executado. A atualização não é instalada silenciosamente.
 
-A atualização não é instalada silenciosamente: o usuário confirma o processo e acompanha normalmente o instalador.
+## Retenção e privacidade
 
-## Análises
+O programa permite escolher por quanto tempo manter históricos e prints: 30, 60, 90 dias ou nunca apagar.
 
-Sessões menores que 15 minutos continuam aparecendo no Histórico e contam nos totais de lucro, mas ficam fora das métricas em que uma duração muito curta distorceria o resultado, como média por hora e ranking de horários.
+O Mechanic Tool funciona localmente e não exige conta, login ou servidor próprio. Os dados de uso ficam no computador do usuário e o histórico não é enviado para a KitoSoft.
 
-O ranking de horários é **estimado**. Como o aplicativo não registra cada pagamento individual, o lucro de um turno é distribuído proporcionalmente pelo tempo trabalhado em cada faixa horária.
+## Vídeos
 
-## Privacidade
+### Tutorial completo
 
-O Mechanic Tool funciona localmente e não exige conta, login ou servidor próprio.
+[![Assistir ao tutorial completo do Mechanic Tool](https://img.youtube.com/vi/KXMfE-bWXl4/hqdefault.jpg)](https://youtu.be/KXMfE-bWXl4)
 
-Os dados de uso ficam no computador do usuário. O programa não envia histórico de turnos para a KitoSoft.
+▶️ **[Assistir ao tutorial completo no YouTube](https://youtu.be/KXMfE-bWXl4)**
+
+### Demonstração do overlay no GTA RP
+
+[![Mechanic Tool em uso no GTA RP](https://img.youtube.com/vi/ZOsCYhdAd74/hqdefault.jpg)](https://youtu.be/ZOsCYhdAd74)
+
+▶️ **[Assistir à demonstração no GTA RP](https://youtu.be/ZOsCYhdAd74)**
+
+> Os vídeos foram produzidos utilizando a V1. Algumas telas e opções visuais foram modificadas na V2.
 
 ## Windows SmartScreen
 
-A versão 1.0.2 ainda não possui certificado comercial de assinatura de código. Por isso, em alguns computadores o Windows SmartScreen pode exibir um aviso de **editor desconhecido** ao abrir o instalador ou o executável pela primeira vez.
+A versão 2.0.0 ainda não possui certificado comercial de assinatura de código. Por isso, o Windows pode exibir um aviso de **Editor desconhecido** na primeira execução.
 
 Baixe sempre os arquivos pela página oficial de Releases deste repositório.
 
@@ -127,7 +141,7 @@ Baixe sempre os arquivos pela página oficial de Releases deste repositório.
 
 O Mechanic Tool é gratuito. Se ele for útil no seu RP, você pode apoiar voluntariamente o desenvolvimento via PIX.
 
-<img width="260" height="260" alt="Qr-Code-Pix-Kikapture" src="https://github.com/user-attachments/assets/64d17d3c-5579-43e2-88f9-eb6f05b1c8c7" />
+<img width="260" height="260" alt="QR Code PIX do Mechanic Tool" src="https://github.com/user-attachments/assets/64d17d3c-5579-43e2-88f9-eb6f05b1c8c7" />
 
 **PIX:** `5ca81030-e0f6-4776-93be-ded515c14654`
 
@@ -135,16 +149,16 @@ O aplicativo também possui a tela **Sobre / Apoie**, com QR Code e PIX Copia e 
 
 ## Feedback e problemas
 
-Encontrou um bug ou comportamento incorreto? Use a aba **Issues** deste repositório e descreva:
+Encontrou um bug ou comportamento incorreto? Abra uma solicitação na aba [Issues](https://github.com/democlit00-ops/MechanicTool-KitoSoft/issues) e informe:
 
 - o que aconteceu;
-- o que você esperava que acontecesse;
+- o resultado esperado;
 - versão do Mechanic Tool;
 - versão do Windows;
 - passos para reproduzir o problema.
 
 ## Versão atual
 
-**Mechanic Tool v1.0.2 — by KitoSoft**
+**Mechanic Tool v2.0.0 — by KitoSoft**
 
 Este repositório é usado para documentação, downloads oficiais e suporte. O código-fonte do aplicativo não é distribuído aqui.
